@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Vyxo, a Discord bot.">
+  <title>Privacy Policy — Vyxo</title>
+  <style>
+    :root {
+      --panel: rgba(17, 23, 39, 0.94);
+      --text: #f8fafc;
+      --muted: #a7b0c0;
+      --cyan: #00d4ff;
+      --blue: #2563ff;
+      --purple: #7b2ff7;
+      --border: rgba(255, 255, 255, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(37,99,255,.18), transparent 35%),
+        radial-gradient(circle at 85% 15%, rgba(123,47,247,.18), transparent 32%),
+        linear-gradient(180deg, #070910, #0b1020 55%, #080b12);
+    }
+    a { color: var(--cyan); }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8,11,18,.88);
+      backdrop-filter: blur(14px);
+    }
+    .nav, main, footer {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .nav {
+      padding: 16px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: .2em;
+      font-size: 1.15rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: .9rem;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .nav-links a:hover { color: var(--text); }
+    main { padding: 64px 0 80px; }
+    .hero { text-align: center; margin-bottom: 40px; }
+    .eyebrow {
+      color: var(--cyan);
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: .78rem;
+    }
+    h1 {
+      margin: 8px 0 14px;
+      font-size: clamp(2.2rem, 7vw, 4.5rem);
+      line-height: 1.05;
+    }
+    .gradient {
+      background: linear-gradient(90deg, var(--cyan), var(--blue), var(--purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .intro {
+      color: var(--muted);
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .updated {
+      color: #cdd5e3;
+      font-size: .92rem;
+      margin-top: 16px;
+    }
+    .card {
+      margin: 18px 0;
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--panel);
+      box-shadow: 0 18px 60px rgba(0,0,0,.25);
+    }
+    .notice { border-left: 4px solid var(--cyan); }
+    h2 { margin: 0 0 10px; font-size: 1.3rem; }
+    h3 { margin: 20px 0 8px; font-size: 1.05rem; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 22px; }
+    li { margin: 8px 0; }
+    footer {
+      padding: 28px 0 44px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      font-size: .9rem;
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .card { padding: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">⚡ VYXO</div>
+      <nav class="nav-links" aria-label="Legal navigation">
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:vyxo.contact@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Legal information</div>
+      <h1>Privacy <span class="gradient">Policy</span></h1>
+      <p class="intro">
+        This Privacy Policy explains what information Vyxo may collect,
+        why it is used, how it may be shared, and the choices available to you.
+      </p>
+      <p class="updated"><strong>Last updated:</strong> August 3, 2026</p>
+    </section>
+
+    <section class="card notice">
+      <h2>1. Overview</h2>
+      <p>
+        Vyxo is a Discord application designed to provide moderation, automation,
+        community, ticket, economy, music, AI, logging, and related server tools.
+        The Vyxo development team is responsible for the processing described in
+        this Policy.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Information We May Collect</h2>
+
+      <h3>Discord identifiers</h3>
+      <p>
+        We may process Discord user IDs, server IDs, channel IDs, role IDs, and
+        message IDs. These identifiers allow Vyxo to provide commands, remember
+        settings, apply permissions, and associate stored data with the correct
+        Discord account or server.
+      </p>
+
+      <h3>Server settings and configuration</h3>
+      <p>
+        We may store settings selected by server administrators, such as command
+        preferences, language, moderation rules, log channels, ticket settings,
+        welcome settings, permission roles, and enabled features.
+      </p>
+
+      <h3>Feature-related data</h3>
+      <p>
+        Depending on the features enabled in a server, Vyxo may store moderation
+        records, warnings, cases, ticket information, economy balances, level or
+        experience data, reminders, custom commands, and similar operational data.
+      </p>
+
+      <h3>Content submitted to Vyxo</h3>
+      <p>
+        Vyxo may process command inputs and content intentionally submitted through
+        enabled features, such as ticket messages, reports, forms, AI prompts, or
+        configuration fields. Vyxo does not need to store every message in a server
+        unless a specific enabled feature requires that content.
+      </p>
+
+      <h3>Technical and usage information</h3>
+      <p>
+        We may collect command usage, error reports, timestamps, response times,
+        and security logs to operate, protect, troubleshoot, and improve Vyxo.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>3. How We Receive Information</h2>
+      <p>Information may be received:</p>
+      <ul>
+        <li>from Discord when you or a server interacts with Vyxo;</li>
+        <li>from commands, forms, tickets, dashboards, or settings you submit;</li>
+        <li>automatically through technical logs generated while the service operates;</li>
+        <li>from third-party services used by an optional feature.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. How We Use Information</h2>
+      <p>We may use information to:</p>
+      <ul>
+        <li>provide and maintain Vyxo's features;</li>
+        <li>save server preferences and user progress;</li>
+        <li>perform moderation, ticketing, logging, automation, and support functions;</li>
+        <li>detect abuse, fraud, security incidents, and violations of our Terms;</li>
+        <li>diagnose errors and improve reliability and performance;</li>
+        <li>respond to support, privacy, or deletion requests;</li>
+        <li>comply with legal obligations and enforce our agreements.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Legal Bases for Processing</h2>
+      <p>
+        Where applicable, including in the European Economic Area and the United
+        Kingdom, we process information when it is necessary to provide the service,
+        pursue legitimate interests such as security and service improvement,
+        comply with legal obligations, or act with consent where consent is required.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. How Information May Be Shared</h2>
+      <p>We may share limited information with:</p>
+      <ul>
+        <li><strong>Discord:</strong> as necessary for the app to operate on Discord;</li>
+        <li><strong>service providers:</strong> such as hosting, database, monitoring, and infrastructure providers;</li>
+        <li><strong>optional integrations:</strong> when a server administrator enables a feature that depends on an external API or service;</li>
+        <li><strong>authorities or affected parties:</strong> when reasonably necessary to comply with law, protect rights, or address security and abuse.</li>
+      </ul>
+      <p>
+        We do not sell personal information and do not share it with advertisers
+        for targeted advertising.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. Data Retention</h2>
+      <p>
+        We keep information only for as long as reasonably necessary to provide
+        Vyxo, maintain security, resolve disputes, and comply with legal obligations.
+        Retention may depend on the feature and server configuration.
+      </p>
+      <p>
+        Following a verified deletion request or removal of Vyxo from a server,
+        we aim to delete or anonymize associated data within 30 days, unless a
+        longer period is required for security, legal compliance, fraud prevention,
+        dispute resolution, or backup integrity.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. Data Security</h2>
+      <p>
+        We use reasonable technical and organizational safeguards designed to
+        protect information against unauthorized access, alteration, loss, or
+        disclosure. No online service can guarantee absolute security.
+      </p>
+      <p>
+        Never send bot tokens, account passwords, authentication codes, or other
+        secrets through Vyxo commands, tickets, or support messages.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. Your Choices and Rights</h2>
+      <p>
+        Depending on your location, you may have rights to request access,
+        correction, deletion, restriction, portability, or objection regarding
+        your personal information. You may also withdraw consent where processing
+        is based on consent.
+      </p>
+      <p>
+        Server administrators may disable features or remove Vyxo from their
+        server. To submit a privacy or deletion request, contact
+        <a href="mailto:vyxo.contact@gmail.com">vyxo.contact@gmail.com</a>.
+        We may ask for reasonable verification before acting on a request.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>10. Children's Privacy</h2>
+      <p>
+        Vyxo is not intended for anyone who is not permitted to use Discord under
+        Discord's rules or applicable law. We do not knowingly collect personal
+        information from children in violation of applicable law.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>11. International Data Transfers</h2>
+      <p>
+        Discord and our service providers may process information in countries
+        other than your own. Where required, appropriate safeguards will be used
+        for international transfers.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>12. Third-Party Services and Links</h2>
+      <p>
+        Vyxo may contain links to or integrate with third-party services. Their
+        privacy practices are governed by their own policies, and we are not
+        responsible for services that we do not control.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>13. Changes to this Policy</h2>
+      <p>
+        We may update this Policy when Vyxo's features, data practices, legal
+        requirements, or Discord policies change. The latest revision date will
+        be displayed at the top of this page.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>14. Contact</h2>
+      <p>
+        For privacy questions, data requests, or complaints, contact:
+        <a href="mailto:vyxo.contact@gmail.com">vyxo.contact@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Vyxo. All rights reserved. ·
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+</body>
+</html>

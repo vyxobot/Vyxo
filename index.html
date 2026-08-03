@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="Vyxo is an all-in-one Discord bot for moderation, automation, AI, music, economy, tickets and community growth.">
+  <meta property="og:title" content="Vyxo — Powering Your Discord">
+  <meta property="og:description" content="One bot. Endless possibilities. Build, protect and grow your Discord community.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>Vyxo — Powering Your Discord</title>
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Vyxo home">
+        <img src="assets/logo.png" alt="" width="44" height="44">
+        <span>VY<span class="brand-x">X</span>O</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="commands.html">Commands</a>
+        <a href="#showcase">Dashboard</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Change visual theme" title="Change visual theme">
+          <span class="theme-icon">◐</span>
+        </button>
+        <a class="button button-small button-ghost hide-mobile" href="support.html">Support</a>
+        <a class="button button-small button-primary invite-link hide-mobile" href="#" rel="noopener">
+          Add to Discord
+        </a>
+        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="commands.html">Commands</a>
+      <a href="#showcase">Dashboard</a>
+      <a href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+      <a class="button button-primary invite-link" href="#">Add to Discord</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="live-dot"></span> Built for modern Discord communities</div>
+          <h1>
+            One bot.<br>
+            <span class="gradient-text">Endless possibilities.</span>
+          </h1>
+          <p class="hero-description">
+            Vyxo brings moderation, automation, AI, tickets, music, economy and community tools together in one fast, polished experience.
+          </p>
+
+          <div class="hero-rotator" aria-live="polite">
+            <span>Currently powering:</span>
+            <strong id="feature-rotator">safer communities</strong>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary button-large invite-link magnetic" href="#">
+              <span class="button-icon">✦</span> Add Vyxo to Discord
+            </a>
+            <a class="button button-ghost button-large magnetic" href="commands.html">
+              Explore commands <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="trust-row">
+            <div><strong>24/7</strong><span>Designed to run</span></div>
+            <div><strong>Slash</strong><span>Modern commands</span></div>
+            <div><strong>Secure</strong><span>Privacy-first setup</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="hero-art-card tilt-card">
+            <div class="art-status"><span></span> Vyxo Core Online</div>
+            <img src="assets/hero-robot.webp" alt="Vyxo's futuristic robot mascot standing above a neon city">
+            <div class="floating-chip chip-one">🛡️ AutoMod active</div>
+            <div class="floating-chip chip-two">🎫 Ticket resolved</div>
+            <div class="floating-chip chip-three">✨ AI ready</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container logo-strip reveal">
+        <span>Everything your server needs</span>
+        <div class="logo-strip-items">
+          <span>MODERATION</span><span>AUTOMATION</span><span>AI</span><span>TICKETS</span><span>ECONOMY</span><span>MUSIC</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">Powerful by default</span>
+            <h2>Built to do more.<br><span class="gradient-text">Simple enough for everyone.</span></h2>
+          </div>
+          <p>Turn features on when you need them. Vyxo keeps setup clear, permissions understandable, and everyday management fast.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large reveal tilt-card">
+            <div class="feature-icon">🛡️</div>
+            <div>
+              <span class="card-label">Safety</span>
+              <h3>Advanced moderation</h3>
+              <p>Warnings, timeouts, bans, anti-spam, smart filters, audit logs and configurable protection for every server.</p>
+            </div>
+            <div class="mini-console">
+              <span><i class="status-green"></i> AutoMod</span>
+              <strong>Threat blocked</strong>
+              <small>Spam pattern detected · action completed</small>
+            </div>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-1 tilt-card">
+            <div class="feature-icon">🤖</div>
+            <span class="card-label">Intelligence</span>
+            <h3>AI assistance</h3>
+            <p>Helpful answers, content tools and intelligent workflows designed for community teams.</p>
+            <div class="feature-meter"><span style="--meter: 82%"></span></div>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-2 tilt-card">
+            <div class="feature-icon">🎫</div>
+            <span class="card-label">Support</span>
+            <h3>Ticket system</h3>
+            <p>Panels, forms, transcripts, assignments and clean support workflows without extra bots.</p>
+            <div class="ticket-stack"><span></span><span></span><span></span></div>
+          </article>
+
+          <article class="feature-card reveal tilt-card">
+            <div class="feature-icon">⚡</div>
+            <span class="card-label">Efficiency</span>
+            <h3>Automation</h3>
+            <p>Welcome flows, autoroles, reminders, scheduled messages and server actions that run for you.</p>
+            <div class="automation-flow"><b>Join</b><i></i><b>Role</b><i></i><b>Welcome</b></div>
+          </article>
+
+          <article class="feature-card feature-card-wide reveal reveal-delay-1 tilt-card">
+            <div class="feature-icon">📈</div>
+            <div>
+              <span class="card-label">Engagement</span>
+              <h3>Levels, economy and rewards</h3>
+              <p>Create progression systems your community actually enjoys, with configurable XP, balances, shops, roles and rewards.</p>
+            </div>
+            <div class="chart-bars" aria-hidden="true">
+              <span style="--h:32%"></span><span style="--h:48%"></span><span style="--h:42%"></span><span style="--h:70%"></span><span style="--h:62%"></span><span style="--h:88%"></span><span style="--h:78%"></span>
+            </div>
+          </article>
+
+          <article class="feature-card reveal reveal-delay-2 tilt-card">
+            <div class="feature-icon">🎵</div>
+            <span class="card-label">Entertainment</span>
+            <h3>Music and fun</h3>
+            <p>High-quality community entertainment with controls that stay easy to understand.</p>
+            <div class="equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase-section" id="showcase">
+      <div class="container">
+        <div class="showcase-grid">
+          <div class="showcase-copy reveal">
+            <span class="section-kicker">Control center</span>
+            <h2>Your server.<br><span class="gradient-text">Under control.</span></h2>
+            <p>A clean dashboard concept keeps configuration visual and understandable. No digging through confusing command arguments just to change a setting.</p>
+            <ul class="check-list">
+              <li>Role-based access and clear permissions</li>
+              <li>Live server insights and moderation logs</li>
+              <li>Feature toggles with guided setup</li>
+              <li>Responsive on desktop and mobile</li>
+            </ul>
+            <a class="text-link" href="commands.html">See what Vyxo can do <span>→</span></a>
+          </div>
+
+          <div class="dashboard-window reveal reveal-delay-1">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <div class="window-address">dashboard.vyxo.app / overview</div>
+              <span class="window-secure">● Secure</span>
+            </div>
+            <div class="dashboard-shell">
+              <aside class="dashboard-sidebar">
+                <div class="dashboard-logo"><img src="assets/logo.png" alt=""> VYXO</div>
+                <span class="selected">◈ Overview</span>
+                <span>🛡 Moderation</span>
+                <span>🎫 Tickets</span>
+                <span>⚡ Automation</span>
+                <span>📊 Analytics</span>
+                <span>⚙ Settings</span>
+              </aside>
+              <div class="dashboard-main">
+                <div class="dashboard-title">
+                  <div><small>Good morning</small><strong>Community Overview</strong></div>
+                  <button>Last 7 days ▾</button>
+                </div>
+                <div class="dashboard-stats">
+                  <div><span>Protected actions</span><strong data-count="1284">0</strong><small>↑ security activity</small></div>
+                  <div><span>Resolved tickets</span><strong data-count="94">0</strong><small>Fast response flow</small></div>
+                  <div><span>Automations</span><strong data-count="17">0</strong><small>Running normally</small></div>
+                </div>
+                <div class="dashboard-panels">
+                  <div class="activity-panel">
+                    <div class="panel-title"><strong>Server activity</strong><span>Live</span></div>
+                    <div class="line-chart">
+                      <svg viewBox="0 0 600 180" role="img" aria-label="Decorative server activity chart">
+                        <defs>
+                          <linearGradient id="lineGradient" x1="0" x2="1">
+                            <stop offset="0" stop-color="#00d4ff"/>
+                            <stop offset="1" stop-color="#8a2be2"/>
+                          </linearGradient>
+                          <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#2563ff" stop-opacity=".35"/>
+                            <stop offset="1" stop-color="#2563ff" stop-opacity="0"/>
+                          </linearGradient>
+                        </defs>
+                        <path d="M0,155 C55,145 65,104 118,113 C172,122 181,61 240,77 C299,93 320,25 379,48 C438,70 469,18 520,37 C555,50 574,30 600,20 L600,180 L0,180 Z" fill="url(#areaGradient)"/>
+                        <path d="M0,155 C55,145 65,104 118,113 C172,122 181,61 240,77 C299,93 320,25 379,48 C438,70 469,18 520,37 C555,50 574,30 600,20" fill="none" stroke="url(#lineGradient)" stroke-width="5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="health-panel">
+                    <div class="panel-title"><strong>System health</strong><span>99.9%</span></div>
+                    <div class="health-ring"><span>✓</span></div>
+                    <small>All systems operational</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section command-preview-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">Command explorer</span>
+            <h2>Find the right command<br><span class="gradient-text">in seconds.</span></h2>
+          </div>
+          <p>Search a preview of Vyxo's command categories. Press <kbd>/</kbd> to focus the search box.</p>
+        </div>
+
+        <div class="command-explorer reveal">
+          <div class="command-toolbar">
+            <label class="search-field">
+              <span>⌕</span>
+              <input id="home-command-search" type="search" placeholder="Search commands, e.g. ban, ticket, balance…" autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+            <div class="filter-pills" id="home-command-filters">
+              <button class="active" data-category="all">All</button>
+              <button data-category="moderation">Moderation</button>
+              <button data-category="tickets">Tickets</button>
+              <button data-category="economy">Economy</button>
+              <button data-category="utility">Utility</button>
+            </div>
+          </div>
+          <div class="command-list" id="home-command-list"></div>
+          <div class="command-empty" id="home-command-empty" hidden>No command matches your search.</div>
+          <a class="button button-ghost command-all-button" href="commands.html">Open full command list →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps-section">
+      <div class="container">
+        <div class="center-heading reveal">
+          <span class="section-kicker">Ready in minutes</span>
+          <h2>From invite to impact<br><span class="gradient-text">without the friction.</span></h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-number">01</span>
+            <div class="step-icon">＋</div>
+            <h3>Add Vyxo</h3>
+            <p>Choose your server and review the permissions before installation.</p>
+          </article>
+          <article class="step-card reveal reveal-delay-1">
+            <span class="step-number">02</span>
+            <div class="step-icon">⚙</div>
+            <h3>Configure</h3>
+            <p>Use guided settings or slash commands to enable the features you need.</p>
+          </article>
+          <article class="step-card reveal reveal-delay-2">
+            <span class="step-number">03</span>
+            <div class="step-icon">↗</div>
+            <h3>Grow safely</h3>
+            <p>Automate repetitive work and focus your team on building the community.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <span class="section-kicker">Questions, answered</span>
+          <h2>Everything you need<br><span class="gradient-text">before you start.</span></h2>
+          <p>Still unsure? The support page includes contact options and a more detailed help section.</p>
+          <a class="button button-ghost" href="support.html">Visit support</a>
+        </div>
+        <div class="accordion reveal reveal-delay-1">
+          <details>
+            <summary>Is Vyxo free to use?<span>＋</span></summary>
+            <p>Vyxo is designed with a useful free experience. Optional premium features can be introduced later without removing the essential community tools.</p>
+          </details>
+          <details>
+            <summary>Does Vyxo need Administrator permission?<span>＋</span></summary>
+            <p>No. Grant only the permissions required by the features you enable. Keeping permissions minimal is safer for every server.</p>
+          </details>
+          <details>
+            <summary>Where is server data stored?<span>＋</span></summary>
+            <p>Only data needed for enabled features should be stored. Review the published Privacy Policy for the categories, purpose and deletion process.</p>
+          </details>
+          <details>
+            <summary>Can I disable individual features?<span>＋</span></summary>
+            <p>Yes. Vyxo is modular, so moderation, economy, tickets, music and other systems can be configured independently.</p>
+          </details>
+          <details>
+            <summary>How do I request help or data deletion?<span>＋</span></summary>
+            <p>Use the support page or email vyxo.contact@gmail.com. Privacy requests may require reasonable verification.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="final-cta reveal">
+          <div class="cta-glow"></div>
+          <img src="assets/logo.png" alt="" width="96" height="96">
+          <span class="section-kicker">Build something people remember</span>
+          <h2>Power your Discord with <span class="gradient-text">Vyxo.</span></h2>
+          <p>One polished bot for safer moderation, smoother operations and a stronger community.</p>
+          <div class="hero-actions centered-actions">
+            <a class="button button-primary button-large invite-link magnetic" href="#">Add Vyxo to Discord</a>
+            <a class="button button-ghost button-large" href="support.html">Talk to support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="" width="42" height="42">
+          <span>VY<span class="brand-x">X</span>O</span>
+        </a>
+        <p>Powering modern Discord communities with one connected experience.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/vyxobot/Vyxo" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="mailto:vyxo.contact@gmail.com" aria-label="Email">@</a>
+          <a class="invite-link" href="#" aria-label="Discord">DC</a>
+        </div>
+      </div>
+      <div>
+        <h3>Product</h3>
+        <a href="#features">Features</a>
+        <a href="commands.html">Commands</a>
+        <a href="#showcase">Dashboard</a>
+        <a class="invite-link" href="#">Invite</a>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <a href="support.html">Support</a>
+        <a href="support.html#status">Status</a>
+        <a href="https://github.com/vyxobot/Vyxo" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:vyxo.contact@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Vyxo. All rights reserved.</span>
+      <span>Not affiliated with Discord Inc.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
